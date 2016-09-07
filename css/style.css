@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    background: url("../img/bg.jpg") 0 0 / cover no-repeat;
+    background: #6e6e6e url("../img/bg.jpg") 0 0 / cover no-repeat;
 }
 
 .tint {
