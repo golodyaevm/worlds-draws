@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+    background: url("../img/bg.jpg") 0 0 / cover no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: #6e6e6e;
+}
+
+.p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    width: 744px;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    padding: 10px 6px 6px 10px;
+    background-color: rgba(240,240,240,0.8);
+}
+.p-cell {
+    width: 40px;
+    margin: 0 4px 4px 0;
+    display: inline-block;
+    min-height: 40px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.p-cell:nth-child(17n) {
+    margin-right: 0;
+}
+.logo-sm img {
+    max-width: 40px;
+    max-height: 40px;
+}
+.p-cell.hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 100;
+}
+.extra-info {
+    position: absolute;
+    height: 760px;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: calc(100vw - 832px);
+}
+
+.vs-wrap {
+    width: 100%;
+    border-bottom: 2px solid #cecece;
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(255,255,255,0.9);
+}
+.vs-team, .vs-label {
+    display: inline-block;
+    vertical-align: middle;
+}
+.vs-team {
+    width: 220px;
+}
+.vs-team img {
+    width: 130px;
+    margin: 10px;
+}
+.vs-label {
+    margin: 0 20px;
+    font-size: 24px;
+}
+.extra-info-desc {
+    background: rgba(240,240,240,1);
+    height: 585px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.extra-poss {
+    text-align: center;
+}
+.extra-poss span {
+    font-size: 40px;
+}
+.extra-g-title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.vs-team * {
+    vertical-align: middle;
+}
+.extra-poss-g-left, .extra-poss-g-right {
+    width: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    height: 430px;
+    margin-top: 20px;
+}
+.extra-poss-g-left {
+    border-right: 1px solid #cecece;
+}
+.poss-group-team-el {
+    display: inline-block;
+    width: 50px;
+}
+.poss-groups {
+    text-align: center;
+}
+.poss-group {
+    text-align: center;
+    margin: 5px 0;
+}
+.poss-group-team-el img {
+    width: 100%;
+}
+.poss-groups-wrap {
+    box-sizing: border-box;
+    vertical-align: top;
+    overflow-y: scroll;
+    height: 400px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.poss-group-info {
+    text-align: center;
+}
