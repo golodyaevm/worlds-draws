@@ -5,12 +5,16 @@ html, body {
     font-family: 'Share Tech Mono', monospace;
 }
 
-body {
-    background: #6e6e6e url("../img/bg.jpg") 0 0 / cover no-repeat;
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #6e6e6e url("../img/bg.jpg") 50% 50% / cover no-repeat;
 }
-
 .tint {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     height: 100%;
@@ -145,4 +149,29 @@ a {
 }
 .poss-group-info {
     text-align: center;
+}
+
+@media only screen and (max-width: 1280px) {
+    .p {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        width: 744px;
+        margin: 0;
+        padding: 0;
+        z-index: 0;
+        padding: 10px 6px 6px 10px;
+        background-color: rgba(240,240,240,0.8);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .extra-info {
+        position: absolute;
+        height: 760px;
+        top: 800px;
+        left: 30px;
+        width: 760px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
