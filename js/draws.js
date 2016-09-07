@@ -182,14 +182,14 @@ var drawsCalculator = {
 
         for(var i in teams) {
             var t1 = teams[i].key;
-            var lD = $('<div />').addClass("logo-sm p-cell").html("<img src='img/" + t1 + ".png' />").appendTo(possibilitiesWrap).data({
+            var lD = $('<div />').addClass("logo-sm p-cell").html("<img src='img/" + t1.toLowerCase() + ".png' />").appendTo(possibilitiesWrap).data({
                 "row": 0,
                 "column": parseInt(i) + 1
             });
         }
         for(var i in teams) {
             var t1 = teams[i].key;
-            var lD = $('<div />').addClass("logo-sm p-cell").html("<img src='img/" + t1 + ".png' />").appendTo(possibilitiesWrap).data({
+            var lD = $('<div />').addClass("logo-sm p-cell").html("<img src='img/" + t1.toLowerCase() + ".png' />").appendTo(possibilitiesWrap).data({
                 "row": parseInt(i) + 1,
                 "column": 0
             });
@@ -248,9 +248,9 @@ var drawsCalculator = {
         $('.extra-info').html("");
         var w = $('.extra-info');
         var vsWrap = $('<div class="vs-wrap" />').appendTo(w);
-        var vs1 = $('<div class="vs-team vs-team-1" />').appendTo(vsWrap).html("<span>(" + t1.key + ")</span><img src='img/" + t1.key + ".png'/>");
+        var vs1 = $('<div class="vs-team vs-team-1" />').appendTo(vsWrap).html("<span>(" + t1.key + ")</span><img src='img/" + t1.key.toLowerCase() + ".png'/>");
         var vsLabel = $('<div class="vs-label">vs</div>').appendTo(vsWrap);
-        var vs2 = $('<div class="vs-team vs-team-2" />').appendTo(vsWrap).html("<img src='img/" + t2.key + ".png'/><span>(" + t2.key + ")</span>");
+        var vs2 = $('<div class="vs-team vs-team-2" />').appendTo(vsWrap).html("<img src='img/" + t2.key.toLowerCase() + ".png'/><span>(" + t2.key + ")</span>");
 
         var desc = $("<div class='extra-info-desc'/>").appendTo(w);
         var posWrap = $('<div class="extra-poss"/>').html("Chance to meet at group stage: <span>" + Math.round(100*this.possibilities[t1.key][t2.key])/100 + "%</span>").appendTo(desc);
@@ -288,7 +288,7 @@ var drawsCalculator = {
         for(var i in teams) {
             var team = teams[i];
 
-            var teamEl = $("<div class='poss-group-team-el' />").html("<img src='img/" + team.key + ".png'/>").appendTo(el);
+            var teamEl = $("<div class='poss-group-team-el' />").html("<img src='img/" + team.key.toLowerCase() + ".png'/>").appendTo(el);
         }
         return el;
     },
