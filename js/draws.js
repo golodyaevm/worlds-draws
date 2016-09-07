@@ -157,8 +157,6 @@ var drawsCalculator = {
             }
         }
 
-        console.log(this.teamPossGroups);
-
         this.maxPossibility = 0;
         this.minPossibility = Infinity;
 
